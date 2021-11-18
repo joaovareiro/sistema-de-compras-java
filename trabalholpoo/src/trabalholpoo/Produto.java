@@ -1,11 +1,11 @@
 package trabalholpoo;
 
-public class Produto implements Comparable<Produto>{
+public class Produto implements Comparable<Produto> {
 
 	private String nomeProduto;
 	private Float valor;
 	private Fornecedor fornecedor;
-	
+
 	public Produto(String nomeProduto, Float valor, Fornecedor fornecedor) {
 		super();
 		this.nomeProduto = nomeProduto;
@@ -36,16 +36,15 @@ public class Produto implements Comparable<Produto>{
 	public void setFornecedor(Fornecedor fornecedor) {
 		this.fornecedor = fornecedor;
 	}
+
 	@Override
-    public int compareTo(Produto prod) {
-        return (int) (this.getValor() - prod.getValor());
-    }
+	public int compareTo(Produto prod) {
+		return (int) (this.getValor() - prod.getValor());
+	}
 
 	@Override
 	public String toString() {
 		return nomeProduto + "R$: " + valor;
 	}
-	
-	
-	
+
 }
