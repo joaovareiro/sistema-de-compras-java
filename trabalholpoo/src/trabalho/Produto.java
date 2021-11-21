@@ -5,10 +5,10 @@ import java.util.InputMismatchException;
 public class Produto implements Comparable<Produto> {
 
 	private String nomeProduto;
-	private double valor;
+	private float valor;
 	private Fornecedor empresa;
 
-	public Produto(String nomeProduto, double valor, Fornecedor empresa) {
+	public Produto(String nomeProduto, float valor, Fornecedor empresa) {
 		this.nomeProduto = nomeProduto;
 		this.empresa = empresa;
 		try {
@@ -38,11 +38,11 @@ public class Produto implements Comparable<Produto> {
 		this.nomeProduto = nomeProduto;
 	}
 
-	public double getValor() {
+	public float getValor() {
 		return valor;
 	}
 
-	public void setValor(Float valor) {
+	public void setValor(float valor) {
 		this.valor = valor;
 	}
 

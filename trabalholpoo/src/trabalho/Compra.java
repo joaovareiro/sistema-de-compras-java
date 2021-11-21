@@ -27,7 +27,7 @@ public class Compra {
 		System.out.println("Funcionário responsável: " + funcionario.getNome());
 		System.out.println("Cliente: " + cliente.getNome());
 
-		double totalCompra = 0;
+		float totalCompra = 0;
 
 		for (Produto produto : compra) {
 			System.out.println(produto);

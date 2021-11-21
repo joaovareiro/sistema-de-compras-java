@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		double valorProduto = 0.0f, salarioFuncionario = 0.0f;
+		float valorProduto = 0.0f, salarioFuncionario = 0.0f;
 
 		Endereco endereco1 = new Endereco("rua1", 1, "bairro1", "cidade1");
 		Endereco endereco2 = new Endereco("rua2", 2, "bairro2", "cidade2");
@@ -16,9 +16,9 @@ public class Main {
 		Endereco endereco5 = new Endereco("rua5", 5, "bairro5", "cidade5");
 		Endereco endereco6 = new Endereco("rua6", 6, "bairro6", "cidade6");
 
-		Funcionario funcionario1 = new Funcionario("Funcionario1", "56369445789", endereco1, "0001-9876", 1200.00,
+		Funcionario funcionario1 = new Funcionario("Funcionario1", "56369445789", endereco1, "0001-9876", 1200.00f,
 				"Medico");
-		Funcionario funcionario2 = new Funcionario("Funcionario2", "47980485181", endereco2, "0002-9876", 2000.50,
+		Funcionario funcionario2 = new Funcionario("Funcionario2", "47980485181", endereco2, "0002-9876", 2000.50f,
 				"Barista");
 
 		Cliente cliente1 = new Cliente("Cliente1", "99984743454", endereco3, "1000-9876");
@@ -30,17 +30,17 @@ public class Main {
 				"9876-2000");
 
 		// CONFERIR
-
-		Produto produto1 = new Produto("produto1", 10, fornecedor1);
-		Produto produto2 = new Produto("produto2", 20.50, fornecedor1);
-		Produto produto3 = new Produto("produto3", 30, fornecedor1);
-		Produto produto4 = new Produto("produto4", 40.50, fornecedor1);
-		Produto produto5 = new Produto("produto5", 50, fornecedor1);
-		Produto produto6 = new Produto("produto6", 60.50, fornecedor2);
-		Produto produto7 = new Produto("produto7", 70, fornecedor2);
-		Produto produto8 = new Produto("produto8", 80.50, fornecedor2);
-		Produto produto9 = new Produto("produto9", 90, fornecedor2);
-		Produto produto10 = new Produto("produto10", 100.50, fornecedor2);
+		
+		Produto produto1 = new Produto("produto1", 10f, fornecedor1);
+		Produto produto2 = new Produto("produto2", 20.50f, fornecedor1);
+		Produto produto3 = new Produto("produto3", 30f, fornecedor1);
+		Produto produto4 = new Produto("produto4", 40.50f, fornecedor1);
+		Produto produto5 = new Produto("produto5", 50f, fornecedor1);
+		Produto produto6 = new Produto("produto6", 60.50f, fornecedor2);
+		Produto produto7 = new Produto("produto7", 70f, fornecedor2);
+		Produto produto8 = new Produto("produto8", 80.50f, fornecedor2);
+		Produto produto9 = new Produto("produto9", 90f, fornecedor2);
+		Produto produto10 = new Produto("produto10", 100.50f, fornecedor2);
 		
 		Compra compra1 = new Compra(funcionario1, cliente1);
 		Compra compra2 = new Compra(funcionario2, cliente2);

@@ -4,10 +4,10 @@ import java.util.InputMismatchException;
 
 public class Funcionario extends Pessoa {
 
-	private double salario;
+	private float salario;
 	private String funcao;
 
-	public Funcionario(String nome, String cpf, Endereco endereco, String celular, double salario, String funcao) {
+	public Funcionario(String nome, String cpf, Endereco endereco, String celular, float salario, String funcao) {
 		super(nome, cpf, endereco, celular);
 		try {
 			this.salario = salario;
