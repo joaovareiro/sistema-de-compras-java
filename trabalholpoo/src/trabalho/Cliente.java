@@ -1,0 +1,15 @@
+package trabalho;
+
+public class Cliente extends Pessoa{
+
+	public Cliente(String nome, String cpf, Endereco endereco, String celular) {
+		super(nome, cpf, endereco, celular);
+	}
+
+	@Override
+	public String toString() {
+		return "Nome do cliente: " + getNome() +
+			   "\nCPF do cliente: " + getCpf() + 
+			   "\nCelular do cliente: " + getCelular();
+	}
+}
